@@ -11,3 +11,8 @@ phases:
     commands:
       #- npm run start
       - echo "Build completed successfully!"
+
+artifacts:
+  files:
+    - '**/*'  # This will include all files in the build directory
+  discard-paths: yes  # This will discard the directory structure in the artifact
